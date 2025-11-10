@@ -53,7 +53,7 @@ Ajuste o application propeties para seu contexto colocando a senha do seu banco 
 
 ```application.properties
 spring.datasource.url=jdbc:mysql://localhost:3306/nome_do_seu_banco?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=America/Sao_Paulo&allowPublicKeyRetrieval=true&useSSL=false
-No application.yml:
+
 spring.datasource.username=root
 spring.datasource.password=suasenhaforte
 ```
