@@ -100,7 +100,7 @@ public class PedidoService {
             if (produto.getQuantidadeEstoque() < item.getQuantidade()) {
                 pedido.setStatus(StatusPedido.CANCELADO);
                 pedidoRepository.save(pedido);
-                throw new EstoqueException("Produto sem estoque: " + produto.getNome());
+                throw new EstoqueException("Produto sem estoque: " + produto.getNome() + "! O pedido foi cancelado!");
             }
         }
 
