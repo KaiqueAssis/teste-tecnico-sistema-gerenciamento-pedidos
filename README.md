@@ -62,8 +62,13 @@ spring.datasource.password=suasenhaforte
 
 Agora rode o dump.sql que está dentro da pasta raiz do projeto ao mesmo nivel da pom.xml.
 
+1° com cmd
 ```bash
 mysql -u seu_usuario -p sua_senha banco_ou_schema < dump.sql
+```
+2° com powershell do windows
+```bash
+Get-Content -Raw .\dump.sql | mysql -u seu_usuario -p sua_senha nome_do_banco
 ```
 
 ### 🧩 **4️⃣ Rodar o Projeto**
